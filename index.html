@@ -349,11 +349,37 @@
             <label for="exampleTextarea" class="form-label fw-bold">Your Message</label>
             <textarea class="form-control" id="exampleTextarea" rows="4"></textarea>
         </div>
-        <button>
+       
       
-        <!-- Submit button -->
-        <!-- <button type="submit" class="btn btn-dark mb-5 text-align-center">Submit</button> -->
-       <button> <a href="#contact" class="btn btn-outline-dark btn-rounded profile-btn fw-bold">Submit</a></button>
+       <!-- Button to trigger the modal -->
+<button type="button" class="btn btn-outline-dark btn-rounded profile-btn fw-bold" data-toggle="modal" data-target="#successModal">
+    Submit
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="successModalLabel">Successfully Submitted</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Your submission was successful. Thank you!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+       
+      
+
+  
       </form>
 </div>
 <!-- contact end -->
@@ -483,7 +509,15 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-  <!-- Footer -->
+ 
+  <!-- Add Bootstrap JS and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>
